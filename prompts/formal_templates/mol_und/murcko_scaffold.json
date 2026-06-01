@@ -1,0 +1,30 @@
+{
+  "task_family": "mol_und",
+  "subtask": "murcko_scaffold",
+  "reporting_task": "MolUnd/Murcko Scaffold",
+  "n_samples": 300,
+  "step_fields": [
+    "step1_n_mol_rings",
+    "step2_scaffold",
+    "step3_n_scaf_rings",
+    "step4_ring_match",
+    "step5_substructure"
+  ],
+  "rdkit_reference_fields": [
+    "rdkit_mol_rings",
+    "rdkit_ok",
+    "rdkit_scaf_rings"
+  ],
+  "verifier_fields": [
+    "S1_mol_rings",
+    "S2_scaffold_match",
+    "S2_scaffold_valid",
+    "S3_scaf_rings",
+    "S4_ring_match",
+    "S5_substructure"
+  ],
+  "notes": [
+    "Step fields are structured reference states extracted from verified traces.",
+    "Process files also include formal_cot_trace with step_name, natural_language, and formal_ab fields."
+  ]
+}

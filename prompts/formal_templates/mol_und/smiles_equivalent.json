@@ -1,0 +1,38 @@
+{
+  "task_family": "mol_und",
+  "subtask": "smiles_equivalent",
+  "reporting_task": "MolUnd/SMILES Equivalence",
+  "n_samples": 300,
+  "step_fields": [
+    "step1_canonical_a",
+    "step1_formula_a",
+    "step2_canonical_b",
+    "step2_formula_b",
+    "step3_formula_match",
+    "step3_identical",
+    "step4_canonical_equal",
+    "step4_predict",
+    "step5_predict"
+  ],
+  "rdkit_reference_fields": [
+    "rdkit_canonical_a",
+    "rdkit_canonical_b",
+    "rdkit_formula_a",
+    "rdkit_formula_b"
+  ],
+  "verifier_fields": [
+    "S1_canonical_a",
+    "S1_formula_a",
+    "S2_canonical_b",
+    "S2_formula_b",
+    "S3_formula_match",
+    "S3_identical",
+    "S4_canonical_equal",
+    "S4_predict_logic",
+    "S5_predict_logic"
+  ],
+  "notes": [
+    "Step fields are structured reference states extracted from verified traces.",
+    "Process files also include formal_cot_trace with step_name, natural_language, and formal_ab fields."
+  ]
+}

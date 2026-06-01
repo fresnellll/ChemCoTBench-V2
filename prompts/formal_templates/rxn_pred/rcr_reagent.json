@@ -1,0 +1,35 @@
+{
+  "task_family": "rxn_pred",
+  "subtask": "rcr_reagent",
+  "reporting_task": "RxnPred/Component Recommendation",
+  "n_samples": 200,
+  "step_fields": [
+    "step1_rxn_class",
+    "step2_core_transformation",
+    "step2_rxn_smiles",
+    "step3_reagent_slot",
+    "step4_reagent_strategy",
+    "step5_component_mode",
+    "step6_reagent_class",
+    "step7_predicted_reagent_smiles",
+    "step8_self_consistent"
+  ],
+  "rdkit_reference_fields": [],
+  "verifier_fields": [
+    "S10_charge_balance",
+    "S11_mol_valid",
+    "S12_answer_consistent",
+    "S1_rxn_class_exact",
+    "S2_transformation_logic",
+    "S3_slot_grounding",
+    "S5_component_mode_grounding",
+    "S6_class_grounding",
+    "S7_component_self_consistency",
+    "S8_class_self_consistency",
+    "S9_not_reactant_copy"
+  ],
+  "notes": [
+    "Step fields are structured reference states extracted from verified traces.",
+    "Process files also include formal_cot_trace with step_name, natural_language, and formal_ab fields."
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "task_family": "mol_opt",
+  "subtask": "drd_logp",
+  "reporting_task": "MolOpt/BioTarget-Dual",
+  "n_samples": 50,
+  "step_fields": [
+    "step1_scaffold_smiles",
+    "step2_fg_added",
+    "step2_fg_removed",
+    "step3_predicted_smiles",
+    "step4_scaffold_claimed",
+    "step5_fg_consistent_claimed"
+  ],
+  "rdkit_reference_fields": [],
+  "verifier_fields": [
+    "S1_scaffold",
+    "S2_edit_plan",
+    "S3_product",
+    "S4_scaffold",
+    "S5_fg"
+  ],
+  "notes": [
+    "Step fields are structured reference states extracted from verified traces.",
+    "Process files also include formal_cot_trace with step_name, natural_language, and formal_ab fields."
+  ]
+}

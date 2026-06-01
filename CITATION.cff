@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+title: "ChemCoTBench-V2"
+message: "If you use ChemCoTBench-V2, please cite the paper."
+type: software
+authors:
+  - name: "ChemCoTBench-V2 Authors"
+date-released: "2026-06-01"
+license: MIT
+repository-code: "https://github.com/ORG/ChemCoTBench-V2"
+abstract: "Rule-verifiable benchmark and evaluation toolkit for process-level chemical reasoning in large language models."
+preferred-citation:
+  type: article
+  title: "From Answers to States: Verifiable Process-Level Evaluation of Chemical Reasoning in Large Language Models"
+  authors:
+    - name: "ChemCoTBench-V2 Authors"
+  year: 2026

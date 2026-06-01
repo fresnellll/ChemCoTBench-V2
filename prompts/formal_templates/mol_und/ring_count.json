@@ -1,0 +1,31 @@
+{
+  "task_family": "mol_und",
+  "subtask": "ring_count",
+  "reporting_task": "MolUnd/Ring Count",
+  "n_samples": 300,
+  "step_fields": [
+    "step1_alts",
+    "step1_smarts",
+    "step2_total",
+    "step3_n",
+    "step4_count",
+    "step5_rejected"
+  ],
+  "rdkit_reference_fields": [
+    "rdkit_applied_count",
+    "rdkit_ok",
+    "rdkit_total_rings"
+  ],
+  "verifier_fields": [
+    "S1_semantic",
+    "S1_syntax",
+    "S2_total",
+    "S3_match",
+    "S4_count",
+    "S5_rejected"
+  ],
+  "notes": [
+    "Step fields are structured reference states extracted from verified traces.",
+    "Process files also include formal_cot_trace with step_name, natural_language, and formal_ab fields."
+  ]
+}

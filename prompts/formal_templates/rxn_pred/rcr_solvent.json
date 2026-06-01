@@ -1,0 +1,28 @@
+{
+  "task_family": "rxn_pred",
+  "subtask": "rcr_solvent",
+  "reporting_task": "RxnPred/Component Recommendation",
+  "n_samples": 200,
+  "step_fields": [
+    "step1_rxn_class",
+    "step2_core_transformation",
+    "step2_rxn_smiles",
+    "step3_proticity",
+    "step4_polarity",
+    "step5_predicted_solvent_smiles",
+    "step6_self_consistent"
+  ],
+  "rdkit_reference_fields": [],
+  "verifier_fields": [
+    "S1_rxn_class_exact",
+    "S2_transformation_logic",
+    "S4_proticity_consistency",
+    "S5_polarity_consistency",
+    "S6_mol_valid",
+    "S7_answer_consistent"
+  ],
+  "notes": [
+    "Step fields are structured reference states extracted from verified traces.",
+    "Process files also include formal_cot_trace with step_name, natural_language, and formal_ab fields."
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "task_family": "rxn_pred",
+  "subtask": "yield_pred",
+  "reporting_task": "RxnPred/Yield Prediction",
+  "n_samples": 200,
+  "step_fields": [
+    "step1_rxn_class",
+    "step2_halide_type",
+    "step3_nucleophile_form",
+    "step3_nucleophile_type",
+    "step4_ligand_class",
+    "step5_predicted_yield",
+    "step6_self_consistent"
+  ],
+  "rdkit_reference_fields": [],
+  "verifier_fields": [
+    "S1_rxn_class",
+    "S2_halide_type",
+    "S3_nucleophile_fmt",
+    "S4_ligand_class_fmt",
+    "S5_yield_numeric",
+    "S6_yield_range",
+    "S7_answer_consistent"
+  ],
+  "notes": [
+    "Step fields are structured reference states extracted from verified traces.",
+    "Process files also include formal_cot_trace with step_name, natural_language, and formal_ab fields."
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "task_family": "rxn_pred",
+  "subtask": "nepp",
+  "reporting_task": "RxnPred/Product-Level Prediction",
+  "n_samples": 200,
+  "step_fields": [
+    "step1_net_charge",
+    "step1_reactants_smi",
+    "step2_elem_mech",
+    "step3_bond_change",
+    "step4_predicted_smi",
+    "step5_product_charge",
+    "step6_charge_balanced",
+    "step7_atom_conserved",
+    "step_annotation"
+  ],
+  "rdkit_reference_fields": [],
+  "verifier_fields": [
+    "S1_reactant_charge",
+    "S2_elem_mech",
+    "S3_bond_change",
+    "S4_mol_valid",
+    "S5_product_charge",
+    "S6_charge_balanced",
+    "S7_atom_conserved"
+  ],
+  "notes": [
+    "Step fields are structured reference states extracted from verified traces.",
+    "Process files also include formal_cot_trace with step_name, natural_language, and formal_ab fields."
+  ]
+}

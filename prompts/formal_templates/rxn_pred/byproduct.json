@@ -1,0 +1,29 @@
+{
+  "task_family": "rxn_pred",
+  "subtask": "byproduct",
+  "reporting_task": "RxnPred/Product-Level Prediction",
+  "n_samples": 200,
+  "step_fields": [
+    "step1_fg_list",
+    "step1_fg_list_str",
+    "step2_rxn_type",
+    "step3_atomic_delta",
+    "step3_atomic_delta_str",
+    "step4_lf_smiles",
+    "step5_fragment_in_reactant",
+    "step6_byproduct_smiles"
+  ],
+  "rdkit_reference_fields": [],
+  "verifier_fields": [
+    "S1_fg_grounding",
+    "S2_rxn_type_exact",
+    "S3_atomic_delta_grounded",
+    "S4_fragment_parseable",
+    "S5_fragment_in_reactant",
+    "S6_element_coherence"
+  ],
+  "notes": [
+    "Step fields are structured reference states extracted from verified traces.",
+    "Process files also include formal_cot_trace with step_name, natural_language, and formal_ab fields."
+  ]
+}

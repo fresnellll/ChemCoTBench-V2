@@ -1,0 +1,29 @@
+{
+  "task_family": "rxn_pred",
+  "subtask": "retro",
+  "reporting_task": "RxnPred/Retrosynthesis",
+  "n_samples": 200,
+  "step_fields": [
+    "step1_fg_list",
+    "step2_rxn_type",
+    "step3_mechanism",
+    "step4_reactant_smi",
+    "step5_all_valid",
+    "step6_bond_broken",
+    "step7_fwd_match",
+    "step7_fwd_note"
+  ],
+  "rdkit_reference_fields": [],
+  "verifier_fields": [
+    "S1_fg_grounding",
+    "S2_rxn_type_exact",
+    "S3_mechanism",
+    "S4_all_valid",
+    "S5_bond_broken",
+    "S6_fwd_self_check"
+  ],
+  "notes": [
+    "Step fields are structured reference states extracted from verified traces.",
+    "Process files also include formal_cot_trace with step_name, natural_language, and formal_ab fields."
+  ]
+}

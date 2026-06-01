@@ -1,0 +1,45 @@
+{
+  "task_family": "mol_edit",
+  "subtask": "delete_v2",
+  "reporting_task": "MolEdit/Delete",
+  "n_samples": 300,
+  "step_fields": [
+    "step1_anchor_element",
+    "step1_anchor_idx",
+    "step1_remove_group",
+    "step2_heavy_atoms",
+    "step2_remove_smiles",
+    "step3_product_smiles",
+    "step4_heavy_delta",
+    "step4_n_heavy_prod",
+    "step4_n_heavy_src",
+    "step5_n_rings_prod",
+    "step5_n_rings_src",
+    "step5_ring_delta"
+  ],
+  "rdkit_reference_fields": [
+    "rdkit_elem_at_anchor",
+    "rdkit_group_heavy",
+    "rdkit_prod_heavy",
+    "rdkit_prod_rings",
+    "rdkit_src_heavy",
+    "rdkit_src_rings"
+  ],
+  "verifier_fields": [
+    "s1_element_match",
+    "s1_idx_valid",
+    "s2_group_valid",
+    "s2_heavy_atoms_ok",
+    "s3_product_valid",
+    "s4_delta_arithmetic",
+    "s4_prod_heavy_ok",
+    "s4_src_heavy_ok",
+    "s5_delta_arithmetic",
+    "s5_prod_rings_ok",
+    "s5_src_rings_ok"
+  ],
+  "notes": [
+    "Step fields are structured reference states extracted from verified traces.",
+    "Process files also include formal_cot_trace with step_name, natural_language, and formal_ab fields."
+  ]
+}

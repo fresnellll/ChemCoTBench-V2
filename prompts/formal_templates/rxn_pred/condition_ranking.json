@@ -1,0 +1,27 @@
+{
+  "task_family": "rxn_pred",
+  "subtask": "condition_ranking",
+  "reporting_task": "RxnPred/Condition Ranking",
+  "n_samples": 200,
+  "step_fields": [
+    "step1_rxn_class",
+    "step2_decision_factor",
+    "step3_pair_diffs",
+    "step4_pairwise_prefs",
+    "step5_ranking",
+    "step6_top2_support"
+  ],
+  "rdkit_reference_fields": [],
+  "verifier_fields": [
+    "S1_decision_factor",
+    "S2_pair_diffs_valid",
+    "S3_pairwise_complete",
+    "S4_pairwise_consistent",
+    "S5_ranking_valid",
+    "S6_top2_support_valid"
+  ],
+  "notes": [
+    "Step fields are structured reference states extracted from verified traces.",
+    "Process files also include formal_cot_trace with step_name, natural_language, and formal_ab fields."
+  ]
+}

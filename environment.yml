@@ -1,0 +1,15 @@
+name: chemcot
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - rdkit
+  - numpy<2
+  - pandas
+  - scikit-learn
+  - tqdm
+  - requests
+  - pip
+  - pip:
+      - openai
+      - pytdc

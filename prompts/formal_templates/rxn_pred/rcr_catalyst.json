@@ -1,0 +1,29 @@
+{
+  "task_family": "rxn_pred",
+  "subtask": "rcr_catalyst",
+  "reporting_task": "RxnPred/Component Recommendation",
+  "n_samples": 200,
+  "step_fields": [
+    "step1_rxn_cls",
+    "step2_core_transform",
+    "step3_catalyst_role",
+    "step4_catalyst_class",
+    "step5_predicted_catalyst_smiles",
+    "step5_predicted_smi",
+    "step6_self_consistent"
+  ],
+  "rdkit_reference_fields": [],
+  "verifier_fields": [
+    "S1_rxn_class_exact",
+    "S2_transformation_logic",
+    "S3_catalyst_role_presence",
+    "S4_class_grounding",
+    "S5_class_self_consistency",
+    "S6_mol_valid",
+    "S7_answer_consistent"
+  ],
+  "notes": [
+    "Step fields are structured reference states extracted from verified traces.",
+    "Process files also include formal_cot_trace with step_name, natural_language, and formal_ab fields."
+  ]
+}

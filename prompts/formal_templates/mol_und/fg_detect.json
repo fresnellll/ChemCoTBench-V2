@@ -1,0 +1,27 @@
+{
+  "task_family": "mol_und",
+  "subtask": "fg_detect",
+  "reporting_task": "MolUnd/Functional Group",
+  "n_samples": 300,
+  "step_fields": [
+    "step1_alts",
+    "step1_smarts",
+    "step2_n",
+    "step3_count"
+  ],
+  "rdkit_reference_fields": [
+    "rdkit_applied_count",
+    "rdkit_ok"
+  ],
+  "verifier_fields": [
+    "S1_semantic",
+    "S1_syntax",
+    "S2_count",
+    "S3_arith",
+    "S4_ans"
+  ],
+  "notes": [
+    "Step fields are structured reference states extracted from verified traces.",
+    "Process files also include formal_cot_trace with step_name, natural_language, and formal_ab fields."
+  ]
+}

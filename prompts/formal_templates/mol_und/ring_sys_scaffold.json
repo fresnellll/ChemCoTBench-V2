@@ -1,0 +1,27 @@
+{
+  "task_family": "mol_und",
+  "subtask": "ring_sys_scaffold",
+  "reporting_task": "MolUnd/Ring-System Scaffold",
+  "n_samples": 300,
+  "step_fields": [
+    "step1_n_mol",
+    "step2_n_scaf",
+    "step3_non_ring",
+    "step4_predict"
+  ],
+  "rdkit_reference_fields": [
+    "rdkit_has_non_ring",
+    "rdkit_mol_rc",
+    "rdkit_scaf_rc"
+  ],
+  "verifier_fields": [
+    "s1_mol_rings",
+    "s2_scaf_rings",
+    "s3_non_ring",
+    "s4_predict"
+  ],
+  "notes": [
+    "Step fields are structured reference states extracted from verified traces.",
+    "Process files also include formal_cot_trace with step_name, natural_language, and formal_ab fields."
+  ]
+}
