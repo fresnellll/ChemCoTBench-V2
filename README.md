@@ -234,11 +234,14 @@ references.
 If you use ChemCoTBench-V2, please cite:
 
 ```bibtex
-@misc{chemcotbenchv2,
-  title = {From Answers to States: Verifiable Process-Level Evaluation of Chemical Reasoning in Large Language Models},
-  author = {ChemCoTBench-V2 Authors},
-  year = {2026},
-  note = {Preprint}
+@misc{guo2026answers,
+      title={From Answers to States: Verifiable Process-Level Evaluation of Chemical Reasoning in Large Language Models}, 
+      author={Hongyu Guo and Hao Li and He Cao and Gongbo Zhang and Li Yuan},
+      year={2026},
+      eprint={2606.03660},
+      archivePrefix={arXiv},
+      primaryClass={cs.AI},
+      url={https://arxiv.org/abs/2606.03660}
 }
 ```
 
